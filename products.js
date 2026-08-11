@@ -22,7 +22,7 @@ const PRODUCTS = [
   { id:"14", slug:"turmeric.jpeg",         name:"Turmeric Curcumin",                cat:"Immunity",   pack:"60 Caps", mrp:899,  sell:null },
 ];
 
-function imgPath(p){ return `images/${p.slug}`; }
+function imgPath(p){ return `${p.slug}`; }
 function initials(name){ return name.split(/\s|\u2019/).filter(Boolean).slice(0,2).map(w=>w[0]).join('').toUpperCase(); }
 
 function fmt(n){ return n==null ? null : '\u20B9' + n.toLocaleString('en-IN'); }
